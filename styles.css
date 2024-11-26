@@ -4,7 +4,7 @@
     --main-text:whitesmoke;
     --bg-main-color:rgb(43, 43, 43);
     --border:1px solid black;
-    --child_padding:10px;
+    --child_padding:15px;
     --font-size-full:clamp(0.875rem, 0.8571rem + 0.1905vw, 1rem);
     /*Header*/
     --h_height:10vh;
@@ -22,6 +22,10 @@
     --sb-border-r:10px;
     --sb-bg:rgb(56,56,56);
     --sb-padding:min(1vw, 10px);
+    /*Advenced search*/
+    --ad-h2-color:rgba(255, 131, 131, 0.774);
+    --ad-padding:20px;
+    --ad-ln-padding:5px;
 }
 *{
     margin: 0;
@@ -84,4 +88,22 @@ main h1{
     background-color: var(--sb-bg);
     padding: var(--sb-padding);
     margin: var(--child_padding);
+}
+/*Advenced Search*/
+main h2{
+    font-size: calc(var(--font-size-full)*2);
+    color: var(--ad-h2-color);
+    padding: var(--ad-padding);
+}
+.advenced-line{
+    display: block;
+    border-radius: 5px;
+    border: var(--border);
+    padding: var(--ad-ln-padding);
+    width: calc(var(--form-width)*0.75);
+    background-color: var(--sl-bg);
+    margin: var(--ad-ln-padding);
+}
+.mn-form{
+    padding-left:var(--ad-padding);
 }
